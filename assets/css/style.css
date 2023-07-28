@@ -13,27 +13,6 @@ font-family: 'Ysabeau', sans-serif;
     --off-black: rgba(211, 211, 211, 0.99);
 
 }
-/* utilities */
-/* buttons */
-.btn1, .icon{
-    background-color: var(--medium-blue) !important;
-}
-.btn{
-   height: 6vh !important;
-   width: 9vw !important;
-}
-.btn1:hover{
-    transform: scale(0.93);
-    transition: all 1s ease;
-    cursor: pointer;
-    color: white !important;
-} 
-.btn-2:hover{
-    transform: scale(0.95);
-    transition: all 1s ease;
-    cursor: pointer;
-    color: white !important;
-} 
 /* navbar */
 .navbar{
     background: var(--primary-color);
@@ -47,11 +26,12 @@ font-family: 'Ysabeau', sans-serif;
     background-size: cover;
     background-position: center center;
     z-index: 10;
+    position: relative;
 }
 #banner .container-fluid::before{
     content: "";
-    width: 30em;
-    height: 80%;
+    width: 93%;
+    height: 100%;
     background-color: var(--black-color);
     position: absolute;
     z-index: 5;
@@ -59,12 +39,6 @@ font-family: 'Ysabeau', sans-serif;
     left: auto;
     right: auto;
 }
-/* #banner .bg-trans{
-    background: #00000077;
-    opacity: 0.4;
-    height: 100%;
-    
-} */
 #banner .container-fluid .row .col-md-5 div{
     padding-top: +30%;
     padding-left: 10%;
@@ -77,235 +51,4 @@ font-family: 'Ysabeau', sans-serif;
 /* welcome */
 #welcome{
     background-color: var(--medium-blue);
-}
-/* about */
-#about{
-    background-color: var(--primary-color);
-    position: relative
-}
-#about .row{
-    position: relative;
-}
-#about .head::after{
-    content: "" ;
-    width: 25% ;
-    border: 1px solid var(--off-black) ;
-    position: absolute;
-    top: 1.4rem;
-    right: 18%;
-}
-#about .head::before{
-    content: "";
-    width: 25%;
-    border: 1px solid var(--off-black);
-    position: absolute;
-    top: 1.4rem;
-    right: 57%;
-}
-#about img{
-   height: 43vh;
-   width: 24.6vw;
-   margin-left: 0.73vw;
-}
-
-/* services */
-#services{
-    position:relative;
-    background: url(/assets/images/pexels-pixabay-208321.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-shadow: 0.05rem 0.05rem 0.1rem var(--deep-blue);
-}
-#services::after{
-    content: "";
-    height: 48vh;
-    width: 90vw;
-    top: +10%;
-    left: +5%;
-    z-index: 3;
-    opacity: 0.38;
-    position: absolute;
-    background-color: var(--black-color);
-}
-/* client */
-#client{
-    background: var(--medium-blue);
-}
-#client img{
-    filter: grayscale(100);
-    transition: all 2s ease;
-}
-#client img:hover{
-    filter: grayscale(0);
-    transform: scale(1.1)
-}
-
-/* #footer{
-    background: var(--primary-color);
-} */
-
-
-
-/* media query */
-@media only screen and (max-width: 480px) {
-
-    /* utilities */
-    /* buttons */
-    .btn1, .icon{
-        background-color: var(--medium-blue) !important;
-        /* box-shadow: 0.08rem 0.08rem 0.2rem var(--black-color) !important */
-    }
-    .btn{
-    height: 5vh !important;
-    width: 26vw !important;
-    /* box-shadow: 0.08rem 0.05rem 0.1rem var(--blue-info) !important; */
-    }
-    .btn1:hover{
-        transform: scale(0.95);
-        transition: all 1s ease;
-        cursor: pointer;
-        color: white !important;
-    } 
-    .btn-2:hover{
-        transform: scale(0.95);
-        transition: all 1s ease;
-        cursor: pointer;
-        color: white !important;
-    } 
-
-    /* banner */
-    #banner{
-        /* background-attachment: fixed !important; */
-        background: url(/assets/images/pexels-wewe-yang-4508644.jpg);
-        height: 34vh;
-        background-size: cover;
-        background-position: center center;
-    
-    }
-    #banner .container-fluid::before{
-        content: "";
-        width: 45vw;
-        height: 34vh;
-        background-color: var(--black-color);
-        position: absolute;
-        z-index: 5;
-        opacity: 0.4;
-        top: +10.6%;
-        left: +14.5%;
-    
-    }
-    
-    #banner .container-fluid .cont{
-        /* border: 5px solid red !important; */
-        margin-left: 15%;
-        width: 55vw;
-        padding-top: 14%;
-        text-shadow: 0.2rem 0.1rem 0.5rem var(--black-color);
-        
-    }
-    
-    #banner .container-fluid .cont p{
-        color: var(--green-color);
-    }
-
-        /* about */
-    #welcome{
-        background-color: var(--medium-blue);
-        padding: 0 2vw;
-    }
-
-    #about{
-        background-color: var(--primary-color);
-        /* position: relative; */
-        margin: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #about .row{
-        position: relative;
-    }
-    #about .head::after{
-        content: "" ;
-        width: 24% ;
-        border: 1px solid var(--off-black) ;
-        position: absolute;
-        top: 1.4rem;
-        right: 5%;
-    }
-    #about .head::before{
-        content: "";
-        width: 24%;
-        border: 1px solid var(--off-black);
-        position: absolute;
-        top: 1.4rem;
-        right: 73%;
-    }
-    #about .container{
-        width: 100vw;
-        padding-left: 2.4rem;
-        margin: auto 0;
-        /* padding-right: 1.5rem; */
-        
-    }
-    #about .tc{
-        display:flex;
-        flex-direction: column;
-    }
-    #about .cont-sth{
-        display: flex;
-        align-items: start;
-        margin-left: 0rem !important;
-    }
-    #about img{
-        height: 19.5vh;
-        width: 45vw !important;
-        margin-left: 1vw;
-        padding-top: 0 !important;
-
-        /* border: 2px solid red; */
-    }
-    #about .text-cont{
-        display: flex;
-        flex-direction: column;
-        padding-left: 3rem;
-        padding-right: 0 !important;
-        margin-right: 0;
-        padding-top: 0 !important;
-        width: 55vw;
-        height: 25vh ;
-        /* border: 2px solid red; */
-    }
-    #about p{
-        /* border: 2px solid red; */
-        padding-right: 0 !important;
-    }
-
-    /* services */
-    #services{
-        background: var(--primary-color) !important;
-        color: var(--black-color) !important;
-        text-shadow: none;
-    }
-    #services .cont, #services .cont-2 p{
-        color: var(--black-color) !important;
-    }
-    #services .cont-2 h3, #services .cont .display-5{
-        color: var(--medium-blue) !important;
-    }
-    #services::after{
-        display: none;
-    }
-
-    /* client */
-    #client img{
-        filter: grayscale(100);
-        transition: all 2s ease;
-        transform: scale(2)
-
-    }
-    #client img:hover{
-        filter: grayscale(0);
-        transform: scale(2.2)
-    }
 }
