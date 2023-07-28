@@ -1,0 +1,59 @@
+*{
+font-family: 'Ysabeau', sans-serif;
+}
+:root{
+    --primary-color: aliceblue;
+    --green-color: greenyellow;
+    --black-color: black;
+    --deep-green: rgb(18, 91, 18);
+    --deep-blue: blue;
+    --yellow: rgb(255, 242, 0);
+    --medium-blue: rgb(4, 134, 204);
+    --blue-info:  rgb(0, 234, 255);
+    --off-black: rgba(211, 211, 211, 0.99);
+
+}
+/* navbar */
+.navbar{
+    background: var(--primary-color);
+    opacity: 0.9;
+    padding: 0 20vw;
+    }
+/* banner */
+#banner{
+    background-image: url(/assets/images/pexels-wewe-yang-4508644.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+}
+#banner .container-fluid::before{
+    content: "";
+    width: 30em;
+    height: 80%;
+    background-color: var(--black-color);
+    position: absolute;
+    z-index: 5;
+    opacity: 0.4;
+    left: auto;
+    right: auto;
+}
+/* #banner .bg-trans{
+    background: #00000077;
+    opacity: 0.4;
+    height: 100%;
+    
+} */
+#banner .container-fluid .row .col-md-5 div{
+    padding-top: +30%;
+    padding-left: 10%;
+    text-shadow: 0.2rem 0.1rem 0.5rem var(--black-color);
+}
+#banner .container-fluid .row .col-md-5 p{
+    color: var(--green-color);
+}
+
+/* welcome */
+#welcome{
+    background-color: var(--medium-blue);
+}
